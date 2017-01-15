@@ -1,0 +1,21 @@
+{
+  "name": "angular-tree",
+  "version": "1.0.0",
+  "description": "Evaluating some different angular trees\r - angular-ui-tree\r - custom tree-directives for making the most simple treeview",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "http-server -c-1 -o"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Edminsson/angular-tree.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Edminsson/angular-tree/issues"
+  },
+  "homepage": "https://github.com/Edminsson/angular-tree#readme"
+}

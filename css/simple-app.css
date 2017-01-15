@@ -1,0 +1,11 @@
+.trad li {
+  list-style: none;
+}
+
+.trad ul {
+  margin:0;
+}
+
+.trad .pointer {
+  cursor: pointer;
+}

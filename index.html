@@ -1,0 +1,26 @@
+<html ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/simple-app.css">
+</head>
+<body ng-controller="MainCtrl">
+
+    <div><a href="https://github.com/AmitThakkar/AngularJS-Tree">This is where I found the code</a></div>
+    <div><a href="http://sporto.github.io/blog/2013/06/24/nested-recursive-directives-in-angular/">Similar code</a></div>
+  
+    <h2>Extremely simple tree</h2>
+    <div class="trad">
+      <simplenode-tree children="trad"></simplenode-tree>
+    </div>
+
+    <h2>Simple tree with expand and collapse</h2>
+    <div class="trad">
+      <node-tree children="trad"></node-tree>
+    </div>
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="js/simple-app.js"></script>
+</body>
+</html>

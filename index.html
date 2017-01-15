@@ -6,21 +6,30 @@
 </head>
 <body ng-controller="MainCtrl">
 
+    <div><a href="index2">Go to angular-ui-tree example</a></div>
     <div><a href="https://github.com/AmitThakkar/AngularJS-Tree">This is where I found the code</a></div>
     <div><a href="http://sporto.github.io/blog/2013/06/24/nested-recursive-directives-in-angular/">Similar code</a></div>
   
+    <h2>Collection</h2>
+    <div class="trad">
+      <collection collection='trad'></collection>
+    </div>
+
     <h2>Extremely simple tree</h2>
     <div class="trad">
-      <simplenode-tree children="trad"></simplenode-tree>
+      <super-simple-tree children="trad"></super-simple-tree>
     </div>
 
     <h2>Simple tree with expand and collapse</h2>
     <div class="trad">
-      <node-tree children="trad"></node-tree>
+      <simple-tree children="trad"></simple-tree>
     </div>
 
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/angular/angular.js"></script>
+    <script src="js/super-simple-tree.js"></script>
+    <script src="js/simple-tree.js"></script>
+    <script src="js/collection.js"></script>
     <script src="js/simple-app.js"></script>
 </body>
 </html>

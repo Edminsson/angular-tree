@@ -1,17 +1,4 @@
-angular.module('collection',[])
-
-.directive('collection', function () {
-  return {
-      restrict: "E",
-      replace: true,
-      scope: {
-          collection: '='
-      },
-      template: "<ul><member ng-repeat='member in collection' member='member'></member></ul>"
-  }
-})
-
-.directive('member', function ($compile) {
+define([],function ($compile) {
   return {
       restrict: "E",
       replace: true,
@@ -26,4 +13,4 @@ angular.module('collection',[])
           }
       }
   }
-})
+});

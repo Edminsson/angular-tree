@@ -1,4 +1,4 @@
-export function superSimpleNode ($compile) {
+function superSimpleNode ($compile) {
   return {
     restrict: 'E',
     replace: true,
@@ -11,3 +11,5 @@ export function superSimpleNode ($compile) {
     }
   };
 }
+
+module.exports = superSimpleNode;

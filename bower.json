@@ -16,6 +16,7 @@
   ],
   "dependencies": {
     "jquery": "^1.8.0",
-    "angular-ui-tree": "^2.22.2"
+    "angular-ui-tree": "^2.22.2",
+    "traceur": "^0.0.111"
   }
 }

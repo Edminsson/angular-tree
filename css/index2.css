@@ -1,0 +1,72 @@
+#main-indexering {
+    overflow: hidden;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+#right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: auto;
+    background-color: #F2B600;
+    white-space: nowrap;
+    width: 270px;
+    padding: 0 10px 10px 0;
+}
+
+.index {
+    position: relative;
+    height: 100%;
+    
+}
+
+#indextradet {
+    position: relative;
+    height: 100%;
+    overflow-y: auto;
+}
+
+
+
+.indexouter {
+    position: absolute;
+    overflow: hidden;
+    top: 300px;
+    left: 500px;
+    bottom: 0;
+    right:0;
+}
+
+
+.indexinner {
+    position: absolute;
+    top: 0;
+    left: auto;
+    bottom: 0;
+    width: 270px;
+    background-color: lightgray;
+}
+
+.indexinner2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: auto;
+    background-color: #F2B600;
+    white-space: nowrap;
+    width: 270px;
+    padding: 0 10px 10px 0;    
+}
+
+.indextree {
+    position:relative;
+    height: 100%;
+    overflow-y: auto;
+    background-color: lightblue;
+}

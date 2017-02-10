@@ -3,11 +3,13 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <link rel="stylesheet" href="bower_components/angular-ui-tree/dist/angular-ui-tree.min.css">
+    <link rel="stylesheet" href="css/index2.css">
 </head>
 <body ng-app="app">
     <div><a href="index">Go to simple tree example</a></div>
     <div ng-controller="mainController">
         <h1>{{title}}</h1>
+        <button ng-click="deleteNodes()">Radera noder</button>
 
         <!--<script type="text/ng-template" id="nodes_renderer.html">
             <div ui-tree-handle>
@@ -27,11 +29,45 @@
             </ol>
         </script>
 
-        <div ui-tree>
-            <ol ui-tree-nodes="" ng-model="data" id="tree-root">
-                <li ng-repeat="node in data" ui-tree-node ng-include="'nodes_renderer.html'"></li>
-            </ol>
+        <div id="main-indexering">
+            <div id="right">
+
+<div id="batch-anmarkning" class="anmarkning">
+    <h4>Anmärkning för bok/volym</h4>
+    <form class="ng-pristine ng-valid ng-valid-maxlength" style="">
+        <textarea ng-model="model.arbetsorderAnmarkning" rows="4" maxlength="500" class="ng-pristine ng-valid ng-empty ng-valid-maxlength ng-touched" style=""></textarea>
+        <button ng-click="sparaAnmarkning(model.arbetsorderAnmarkning)" class="btn btn-sm btn-success">Spara anmärkning</button>
+    </form>
+</div>
+
+
+                <div class="index">
+
+
+
+                <div class="index-header">
+                    <h4 class="ng-binding">Indexerat: 22 av 269 bilder</h4>
+                    <div class="progress">
+                        <div class="progress-bar ng-binding" role="progressbar" aria-valuenow="22" aria-valuemin="0" aria-valuemax="269" ng-attr-style="width:{{model.procentIndexeradeBilder}}%" style="width:8%">
+                            8%
+                        </div>
+                    </div>
+                </div>
+
+
+
+                    <div id="indextradet">
+                        <div ui-tree>
+                            <ol ui-tree-nodes="" ng-model="data" id="tree-root">
+                                <li ng-repeat="node in data" ui-tree-node ng-include="'nodes_renderer.html'"></li>
+                            </ol>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
         </div>
+
 
 
     </div>

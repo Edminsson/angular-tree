@@ -2,6 +2,9 @@ var app = angular.module('app', ['ui.tree']);
 
 app.controller('mainController', function($scope){
     $scope.title = "Testing angular-ui-tree";
+    $scope.deleteNodes = function(){
+        $scope.data[1].nodes = [];
+    };
 
     $scope.data = [{
     'id': 1,
@@ -50,7 +53,92 @@ app.controller('mainController', function($scope){
         'nodes': []
         }
     ]
-    }];
+    }
+    , {
+    'id': 4,
+    'title': 'node4',
+    'nodes': [
+        {
+        'id': 431,
+        'title': 'node3.1',
+        'nodes': []
+        }
+    ]
+    }
+    , {
+    'id': 5,
+    'title': 'node5',
+    'nodes': [
+        {
+        'id': 531,
+        'title': 'node3.1',
+        'nodes': []
+        }
+    ]
+    }
+    , {
+    'id': 6,
+    'title': 'node6',
+    'nodes': [
+        {
+        'id': 631,
+        'title': 'node3.1',
+        'nodes': []
+        }
+    ]
+    }
+    , {
+    'id': 7,
+    'title': 'node7',
+    'nodes': [
+        {
+        'id': 731,
+        'title': 'node3.1',
+        'nodes': []
+        }
+    ]
+    }
+    , {
+    'id': 8,
+    'title': 'node8',
+    'nodes': [
+        {
+        'id': 831,
+        'title': 'node83.1',
+        'nodes': []
+        }
+        ,{
+        'id': 832,
+        'title': 'node83.2',
+        'nodes': []
+        }
+        ,{
+        'id': 833,
+        'title': 'node83.3',
+        'nodes': []
+        }
+        ,{
+        'id': 834,
+        'title': 'node83.4',
+        'nodes': []
+        }
+
+    ]
+    }
+    , {
+    'id': 9,
+    'title': 'node9',
+    'nodes': [
+        {
+        'id': 931,
+        'title': 'node3.1',
+        'nodes': []
+        }
+    ]
+    }
+    
+    
+    ];
 
 
 

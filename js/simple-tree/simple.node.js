@@ -1,17 +1,4 @@
-angular.module('simple.tree', [])
-
-.directive('simpleTree', function () {
-  return {
-    template: '<simple-node ng-repeat="node in tree"></simple-node>',
-    replace: true,
-    restrict: 'E',
-    scope: {
-      tree: '=children'
-    }
-  };
-})
-
-.directive('simpleNode', function ($compile) {
+export function simpleNode ($compile) {
   return {
     restrict: 'E',
     replace: true,
@@ -32,4 +19,4 @@ angular.module('simple.tree', [])
       };
     }]
   };
-});
+}

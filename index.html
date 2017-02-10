@@ -1,4 +1,4 @@
-<html ng-app="app">
+<html>
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
@@ -25,11 +25,17 @@
       <simple-tree children="trad"></simple-tree>
     </div>
 
+    <script src="bower_components/traceur/traceur.js"></script>
+    <script src="node_modules/systemjs/dist/system.js"></script>
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/angular/angular.js"></script>
-    <script src="js/super-simple-tree.js"></script>
-    <script src="js/simple-tree.js"></script>
-    <script src="js/collection.js"></script>
-    <script src="js/simple-app.js"></script>
+
+    <script>
+        System.import('js/simple-app.js').then(function(g) {
+            angular.bootstrap(document, ['app']);
+        });
+    </script>
+
+
 </body>
 </html>
